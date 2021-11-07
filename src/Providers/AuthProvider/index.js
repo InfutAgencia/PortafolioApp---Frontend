@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   })
 
   const login = useCallback(payload => {
-    setSesion({ user: { name: payload.username } })
+    setSesion({ user: payload })
   }, [])
 
   const logout = useCallback(() => {
